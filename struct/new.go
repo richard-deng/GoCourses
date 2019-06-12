@@ -1,22 +1,22 @@
-package main 
+package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 type date struct {
-	year int
+	year  int
 	month int
-	day int
+	day   int
 }
 
 type student struct {
-	Id int
-	name string
-	sex bool
-	class string
+	Id       int
+	name     string
+	sex      bool
+	class    string
 	birthday date
-	_ string
+	_        string
 }
 
 func main() {

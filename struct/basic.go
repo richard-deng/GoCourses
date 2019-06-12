@@ -1,15 +1,15 @@
-package main 
+package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 type student struct {
-	id int
-	name string 
-	sex bool
-	age int
-	calss string 
+	id    int
+	name  string
+	sex   bool
+	age   int
+	calss string
 }
 
 func main() {
