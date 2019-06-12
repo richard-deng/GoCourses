@@ -1,8 +1,8 @@
 package main
 
 import (
-	"net"
 	"fmt"
+	"net"
 	"os"
 	"time"
 )
@@ -17,7 +17,7 @@ func main() {
 	checkErr(err)
 
 	for {
-	    handleClient(conn)
+		handleClient(conn)
 	}
 }
 

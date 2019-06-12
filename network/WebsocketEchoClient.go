@@ -1,10 +1,10 @@
 package main
 
 import (
-	"os"
 	"fmt"
 	"golang.org/x/net/websocket"
 	"io"
+	"os"
 )
 
 func main() {
@@ -23,7 +23,7 @@ func main() {
 			if err == io.EOF {
 				break
 			}
-			fmt.Println("Couldn't receive msg "+ err.Error())
+			fmt.Println("Couldn't receive msg " + err.Error())
 			break
 		}
 		fmt.Println("Received from server: " + msg)

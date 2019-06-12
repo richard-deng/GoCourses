@@ -1,7 +1,7 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 	"net"
 	"os"
 )
@@ -23,7 +23,7 @@ func main() {
 }
 
 func handleClient(conn net.Conn) {
-	var buf[512]byte
+	var buf [512]byte
 	for {
 		n, err := conn.Read(buf[0:])
 		if err != nil {

@@ -1,8 +1,8 @@
 package main
 
 import (
-	"golang.org/x/net/websocket"
 	"fmt"
+	"golang.org/x/net/websocket"
 	"net/http"
 	"os"
 )
@@ -11,8 +11,8 @@ func Echo(ws *websocket.Conn) {
 	fmt.Println("Echoing")
 
 	for n := 0; n < 10; n++ {
-		msg := "hello " +string(n+48)
-		fmt.Println("Sending to client: "+msg)
+		msg := "hello " + string(n+48)
+		fmt.Println("Sending to client: " + msg)
 		err := websocket.Message.Send(ws, msg)
 		if err != nil {
 			fmt.Println("Can't send")

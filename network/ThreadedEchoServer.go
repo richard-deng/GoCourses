@@ -1,13 +1,13 @@
 package main
 
 import (
-	"net"
 	"fmt"
+	"net"
 	"os"
 )
 
 func main() {
-	service := ":1201"
+	service := ":5000"
 	tcpAddr, err := net.ResolveTCPAddr("tcp", service)
 	checkErr(err)
 
@@ -45,4 +45,3 @@ func checkErr(err error) {
 		os.Exit(1)
 	}
 }
-

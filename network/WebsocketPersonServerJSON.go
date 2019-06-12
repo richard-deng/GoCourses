@@ -1,15 +1,15 @@
 package main
 
 import (
-	"golang.org/x/net/websocket"
 	"fmt"
+	"golang.org/x/net/websocket"
 	"net/http"
 	"os"
 )
 
 type Person struct {
-	Name	string
-	Emails  []string
+	Name   string
+	Emails []string
 }
 
 func ReceivePerson(ws *websocket.Conn) {
@@ -20,7 +20,7 @@ func ReceivePerson(ws *websocket.Conn) {
 	} else {
 		fmt.Println("Name: " + person.Name)
 		for _, e := range person.Emails {
-			fmt.Println("An email: " +e)
+			fmt.Println("An email: " + e)
 		}
 	}
 }
