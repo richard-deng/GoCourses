@@ -1,11 +1,11 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 type people struct {
-	name string
+	name  string
 	phone string
 }
 

@@ -1,16 +1,16 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 type rectangle struct {
-	width int
+	width  int
 	height int
 }
 
 func (recv rectangle) area() int {
-    return recv.width * recv.height
+	return recv.width * recv.height
 }
 
 func main() {
